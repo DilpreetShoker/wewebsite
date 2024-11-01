@@ -1,0 +1,44 @@
+.sponsors {
+    background-color: white;
+    color: var(--primary-color);
+    height: fit-content;
+    width: 100%;
+    position: relative;
+}
+
+.sponsors .title .line{
+    background-color: var(--primary-color);
+}
+
+.sponsorImage{
+    width: 33.3%;
+    display: inline-block;
+    margin:50px 0;
+    padding: 0 50px;
+}
+
+.sponsorImage img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 25px;
+    padding: 0px 40px;
+}
+
+@media only screen and (max-width: 1050px){
+    .sponsorImage{
+        width: 40%;
+        margin: 50px 5%;
+    }
+    .sponsorImage:last-child{
+        margin: 50px 30%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .sponsorImage{
+        width: 80%;
+        margin: 50px 10%;
+    }
+    .sponsorImage:last-child{
+        margin: 50px 5%;
+    }
+}

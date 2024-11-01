@@ -1,0 +1,134 @@
+.home {
+    background-color: var(--overlay);
+    color: #fff;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    padding: 10% 5%;
+}
+
+.home:before {
+    content: '';
+    background: url('./images/img6.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.home .content{
+    width: 100%;
+    height: 100%;
+}
+.home .col1 {
+    display: inline-block;
+    width:50%;
+    vertical-align: top;
+    margin: 10% 2.5%;
+}
+.home .col1 h1 {
+    font-weight: 400;
+}
+.home .col1 h6 {
+    font-weight: 300;
+}
+.home .col2 {
+    display: inline-block;
+    padding: 10px 20px;
+    width:40%;
+    height: 400px;
+    margin: 5% 2.5%;
+    background-color: white;
+    box-shadow: 20px 20px black;
+}
+
+.col2 .image1{
+    display: inline-block;
+    width: 45%;
+    height: 30%;
+    margin: 0 2.5%;
+    background: url('./images/img3.jpg') no-repeat center center/cover;
+    box-shadow: 10px 10px var(--primary-color);
+}
+.col2 .image2{
+    display: inline-block;
+    width: 45%;
+    height: 30%;
+    margin: 0 2.5%;
+    background: url('./images/img2.jpg') no-repeat center center/cover;
+    box-shadow: 10px 10px var(--primary-color);
+}
+.col2 .image3{
+    display: inline-block;
+    width: 95%;
+    height: 60%;
+    margin:  2.5%;
+    background: url('./images/img8.jpg') no-repeat center center/cover;
+    box-shadow: 10px 10px var(--primary-color);
+}
+
+.home h1{
+    font-size: 60px;
+}
+
+.home h6{
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1268px) {
+    .home .col1 h1 {
+        font-size: 45px;
+    }
+    .home .col1 h6 {
+        font-size:18px;
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .col2 .image3{
+        display: inline-block;
+        width: 95%;
+        height: 60%;
+        margin:  2.5%;
+        border: #fff solid 20px;
+        box-shadow: 10px 10px black;
+    }
+    .col2 .image1{
+        display: none;
+    }
+    .col2 .image2{
+        display: none;
+    }
+    .home .col2{
+        width: 80%;
+        margin-left: 10%;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .home .col1{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .home .col1 h1 {
+        font-size: 30px;
+        padding: 40px 0;
+    }
+    .home .col1 h6 {
+        font-size:16px;
+    }
+    .content{
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
